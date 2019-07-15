@@ -1,6 +1,5 @@
 package com.jinwei.controller;
 
-import com.github.pagehelper.PageInfo;
 import com.jinwei.entity.LogInfo;
 import com.jinwei.service.LogInfoService;
 import org.slf4j.Logger;

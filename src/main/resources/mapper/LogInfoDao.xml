@@ -5,7 +5,7 @@
 
 <mapper namespace="com.jinwei.dao.LogInfoDao">
 
-    <sql id="aaaa">
+    <sql id="LogInfoColumns">
 		a.Id AS "id",
 		a.level AS "level",
 		a.category AS "category",
@@ -20,7 +20,7 @@
 
     <select id="findList" resultType="com.jinwei.entity.LogInfo">
         SELECT
-        <include refid="aaaa"/>
+        <include refid="LogInfoColumns"/>
         FROM log4j a
 
     </select>
