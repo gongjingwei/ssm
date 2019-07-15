@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--  author :李云浩	 date :2019-07-04 10:30:55  version : 1.1.0 -->
+
+<mapper namespace="com.jinwei.dao.LogInfoDao">
+
+    <sql id="aaaa">
+		a.Id AS "id",
+		a.level AS "level",
+		a.category AS "category",
+		a.thread AS "thread",
+		a.location AS "location",
+		a.note AS "note"
+
+
+
+	</sql>
+
+
+    <select id="findList" resultType="com.jinwei.entity.LogInfo">
+        SELECT
+        <include refid="aaaa"/>
+        FROM log4j a
+
+    </select>
+
+
+</mapper>
